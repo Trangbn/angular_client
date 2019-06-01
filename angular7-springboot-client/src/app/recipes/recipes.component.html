@@ -4,7 +4,7 @@
   </div>
   <div class="col-xs-7">
     <app-recipe-detail
-    *ngIf="selectedRecipe; else infoText"></app-recipe-detail>
+    *ngIf="selectedRecipe; else infoText" [detailRecipe]="selectedRecipe"></app-recipe-detail>
     <ng-template #infoText>
       <p>Please select a Recipe!</p>
     </ng-template>
